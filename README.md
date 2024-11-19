@@ -1,5 +1,5 @@
-# Project Responsive Web Design using Bootstrap
-## Date:
+Project Responsive Web Design using Bootstrap
+## Date: 19.11.2024
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -33,330 +33,204 @@ Publish the website in the LocalHost.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dribbble Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Top Navigation Bar -->
-    <div class="top-bar">
-        <input type="text" class="search-bar" placeholder="Search...">
-        <a href="#" class="nav-item">Explore</a>
-        <a href="#" class="nav-item">Hire a Designer</a>
-        <a href="#" class="nav-item">Find Jobs</a>
-        <a href="#" class="nav-item">Blog</a>
-        <a href="#" class="nav-item blue-text">Sign up</a>
-        <a href="#" class="nav-item blue-text">Log in</a>
-    </div>
-
-    <!-- Header Section -->
-    <header>
-        <div class="header-content">
-            <h1>Discover the world’s top designers</h1>
-            <p>Explore work from the most talented and accomplished designers ready to take on your next project</p>
-            <input type="text" class="search-input" placeholder="What are you looking for?">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Dribbble</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Shots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Designers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+                    <li class="nav-item"><a class="btn btn-primary text-white" href="#">Sign Up</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
-
-    <!-- Trending Searches Section -->
-    <section class="trending">
-        <h2>Trending Searches</h2>
-        <div class="trending-tags">
-            <span>landing page</span>
-            <span>e-commerce</span>
-            <span>mobile app</span>
-            <span>logo design</span>
-            <span>dashboard</span>
-            <span>icons</span>
+    </nav>
+    <section class="py-4 text-center bg-light">
+        <div class="container">
+            <h1 class="display-5">What are you working on?</h1>
+            <p class="lead">Dribbble is a show-and-tell platform for designers.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
         </div>
     </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery">
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/11760851/pexels-photo-11760851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Design Sample">
-            <h3>Elephant</h3>
-            <p>Emote Team | 7.2k Views</p>
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h2 class="mb-0">Popular</h2>
+                </div>
+                <div class="col-md-8 text-end">
+                    <button class="btn btn-light btn-sm">Now</button>
+                    <button class="btn btn-light btn-sm">Shots</button>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="https://cdn.dribbble.com/userupload/12044924/file/original-7441c7cdad59beb6ce7a7aab319110b9.png?resize=400x300&vertical=center" class="card-img-top" alt="Shot 1">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">By Famous</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="https://cdn.dribbble.com/userupload/15653410/file/original-bbeafec513b47d157ad760114cd9adb5.png?resize=400x300&vertical=center" class="card-img-top" alt="Shot 2">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">San Brothers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="https://cdn.dribbble.com/users/40433/screenshots/2928289/media/a231b5daaa0520ad061991eeb51751dc.png?resize=400x300&vertical=center" class="card-img-top" alt="Shot 2">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">Ueno</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="https://cdn.dribbble.com/userupload/8483051/file/still-acd7ce3861ca63447f9f5d496cb494e5.png?resize=400x300&vertical=center" class="card-img-top" alt="Shot 2">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">Awe Design Studio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="https://cdn.dribbble.com/users/140043/screenshots/9106916/dribbble_4_compressed.png?resize=400x300&vertical=center" class="card-img-top" alt="Shot 2">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">MakeReign</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="https://cdn.dribbble.com/users/6061337/screenshots/15342859/media/fe77d53ece15bbffb04f175ded73c900.png?resize=400x300&vertical=center" class="card-img-top" alt="Shot 2">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">heartbeat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="https://cdn.dribbble.com/users/1739084/screenshots/4448965/kyzzlj.jpg?resize=400x300&vertical=center" class="card-img-top" alt="Shot 2">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">Wkio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shot-card">
+                        <img src="https://cdn.dribbble.com/userupload/10964296/file/original-ffa83431e0b8639f6d1036a0f80c76ae.png?resize=400x300&vertical=center" class="card-img-top" alt="Shot 2">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-0">Looksgreat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/4749959/pexels-photo-4749959.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Design Sample">
-            <h3>Ducks</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/326012/pexels-photo-326012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Design Sample">
-            <h3>Rabbit</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/4654630/pexels-photo-4654630.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Design Sample">
-            <h3>Deer</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/1319515/pexels-photo-1319515.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Design Sample">
-            <h3>Whale</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Design Sample">
-            <h3>Whale</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/1321524/pexels-photo-1321524.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Design Sample">
-            <h3>Butterfly</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Design Sample">
-            <h3>Panda</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/160722/cat-tiger-getiegert-feel-at-home-160722.jpeg" alt="Design Sample">
-            <h3>Cat</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/2832217/pexels-photo-2832217.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Design Sample">
-            <h3>squirrel</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/598966/pexels-photo-598966.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Design Sample">
-            <h3>Beer</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Design Sample">
-            <h3>Tiger</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-        <!-- Add more cards as needed -->
     </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Design Portfolio. All rights reserved.</p>
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Dribbble Clone. All rights reserved.</p>
+        </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
 ```
 ## style.css:
-```
-/* Reset and basic styles */
-body, h1, h2, p, a, input, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+```/* General Styles */
 body {
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Top Bar Styling */
-.top-bar {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.search-bar {
-    margin-right: 15px;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    outline: none;
-}
-
-.nav-item {
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-}
-
-.blue-text {
-    color: #007bff;
+/* Navbar */
+.navbar-brand {
     font-weight: bold;
+    color: #ff5678 !important;
 }
 
-.blue-text:hover {
-    text-decoration: underline;
+.nav-link {
+    color: #333 !important;
+    margin-right: 15px;
 }
 
-/* Header Section */
-header {
-    background-image: url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg'); /* Add your header image */
-    background-size: cover;
-    padding: 80px 20px;
-    text-align: center;
-    color: #fff;
+.nav-link.btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
 }
 
-.header-content h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+/* Hero Section */
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #333;
 }
 
-.header-content p {
-    font-size: 18px;
+.hero-section p {
+    font-size: 1.2rem;
     margin-bottom: 20px;
+    color: #666;
 }
 
-.search-input {
-    padding: 10px;
-    width: 60%;
-    max-width: 500px;
-    border: none;
-    border-radius: 4px;
-    outline: none;
+/* Shot Cards */
+.shot-card img {
+    border-radius: 5px;
 }
 
-/* Trending Searches Section */
-.trending {
-    padding: 20px;
-    text-align: center;
+.shot-card {
+    transition: transform 0.2s ease-in-out;
 }
 
-.trending h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.shot-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.trending-tags {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.trending-tags span {
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-/* Gallery Section */
-.gallery {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    width: 200px;
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card h3 {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-.card p {
-    font-size: 12px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-/* Gallery Section */
-.gallery {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    width: 200px;
-    text-align: center;
-    position: relative;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.card:hover img {
-    transform: scale(1.2); /* Scale image to 120% on hover */
-}
-
-.card h3 {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-.card p {
-    font-size: 12px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-/* Footer Section */
+/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 20px;
-    margin-top: 20px;
 }
+
 ```
 ## acript.js :
 ```
-// Search functionality
-const searchBar = document.querySelector('.search-bar');
-
-searchBar.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        event.preventDefault(); // Prevent default form submission
-        alert(`Searching for: ${searchBar.value}`);
-    }
+// Add a smooth scroll effect for navigation links
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", event => {
+        event.preventDefault();
+        const targetId = link.getAttribute("href").replace("#", "");
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: "smooth"
+            });
+        }
+    });
 });
 ```
 
 ## OUTPUT:
-![Screenshot 2024-11-19 102459](https://github.com/user-attachments/assets/3896190d-6918-4ac6-a540-2e62df06ca17)
-![Screenshot 2024-11-19 102508](https://github.com/user-attachments/assets/ca7ca54b-6d14-4327-9bdd-575b93771781)
-
+![Screenshot 2024-11-19 122151](https://github.com/user-attachments/assets/c82b74dd-68b7-4ee0-82da-f527881d3022)
+![Screenshot 2024-11-19 122210](https://github.com/user-attachments/assets/b67bd5ac-6320-42d8-85e6-7e319f07688a)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
